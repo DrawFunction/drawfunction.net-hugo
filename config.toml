@@ -1,0 +1,30 @@
+baseurl = "https://drawfunction.net/"
+languageCode = "en-us"
+title = "DrawFunction"
+theme = "hugo-natrium-theme"
+preserveTaxonomyNames = true
+rssLimit = 10
+paginate = 3
+pygmentsCodefences = true
+pygmentsStyle = "native"
+
+[taxonomies]
+    category = "categories"  
+    tag = "tags"
+
+[permalinks]
+    post = "/:slug/"
+    page = "/:slug/"
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = -110
+    
+[params]
+    description = "DrawFunction"
+
+    [params.logo]
+    url = "logo.png"
+    height = 50
+    alt = "DrawFunction Logo"
