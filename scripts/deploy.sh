@@ -2,9 +2,11 @@
 
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
+set -e
+
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
-cd $DIR
+cd $DIR/..
 
 # Build the project.
 hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
